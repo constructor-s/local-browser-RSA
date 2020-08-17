@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/rsa/index.html</title>
+
+    <script src="js/cryptico/jsbn.js" defer></script>
+    <script src="js/cryptico/random.js" defer></script>
+    <script src="js/cryptico/hash.js" defer></script>
+    <script src="js/cryptico/rsa.js" defer></script>
+    <script src="js/cryptico/aes.js" defer></script>
+    <script src="js/cryptico/api.js" defer></script>
+    <!-- <script src="js/cryptico/cryptico.min.js" defer></script> -->
+    <script src="js/crypto.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>RSA Demo</h1>
+        <p>Demonstration of RSA Encryption and Decryption in-browser</p>
+    </header>
+    <main>
+        <section>
+            <textarea id="privatekey">Private key</textarea>
+            <textarea id="publickey">Public key</textarea>
+        </section>
+        <section>
+            <textarea id="decrypted">Decrypted message</textarea>
+            <textarea id="encrypted">Encrypted message</textarea>
+        </section>
+        <section>
+            <button>Encrypt</button>
+            <button>Decrypt</button>
+        </section>
+        <section>
+            <textarea id="randomseed">Random Seed</textarea>
+            <button id="generate-key-pair">Generate new key pair</button>
+        </section>
+    </main>
+</body>
+</html>
